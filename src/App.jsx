@@ -36,6 +36,11 @@ function App() {
     ));
   }
 
+  function deleteTask(id) {
+    if (!window.confirm("Delete this task?")) return;
+    setTasks(tasks.filter(task => task.id !== id));
+  }
+
   return (
     <div className="App">
       <h1>Task Manager</h1>
@@ -64,6 +69,14 @@ function App() {
                   <span className={task.completed ? "completed" : ""}>
                     {task.text}
                   </span>
+
+                  <button
+                    className="delete-btn"
+                    onClick={() => deleteTask(task.id)}
+                  >
+                    ❌
+                  </button>
+
                 </li>
               ))}
             </ul>

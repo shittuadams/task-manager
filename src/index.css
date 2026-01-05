@@ -48,3 +48,13 @@ button {
   color: grey;
 }
 
+.delete-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.delete-btn:hover {
+  color: rgb(0, 0, 0);
+}
