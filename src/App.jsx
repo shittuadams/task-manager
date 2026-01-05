@@ -61,6 +61,14 @@ function App() {
         />
         <button onClick={addTask}>Add Task</button>
       </div>
+
+      <div className="task-counter">
+        <p>
+          {tasks.filter(task => !task.completed).length} task
+          {tasks.filter(task => !task.completed).length !== 1 ? "s" : ""} left        
+        </p>
+      </div>
+
       <div className="task-input">
         {tasks.length === 0 ? (
           <p>No tasks yet</p>
