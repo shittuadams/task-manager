@@ -50,7 +50,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Task Manager</h1>
+      <h2>Task Manager</h2>
 
       <div className="task-input input-add">
         <input
