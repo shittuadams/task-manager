@@ -72,3 +72,15 @@ button {
 p, .task-input, .task-item, .filters {
   font-size: 20px;
 }
+
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .task-input .input-add {
+    display: flex;
+  }
+
+  button .add-btn {
+    width: 100%;
+  }
+}

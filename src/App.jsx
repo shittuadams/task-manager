@@ -52,14 +52,14 @@ function App() {
     <div className="App">
       <h1>Task Manager</h1>
 
-      <div className="task-input">
+      <div className="task-input input-add">
         <input
           type="text"
           placeholder="Enter a new task"
           value={taskText}
           onChange={(e) =>setTaskText(e.target.value)}
         />
-        <button onClick={addTask}>Add Task</button>
+        <button className="add-btn" onClick={addTask}>Add Task</button>
       </div>
 
       <div className="task-counter">
