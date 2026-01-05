@@ -8,7 +8,7 @@
 
 ## 🚀 Live Demo
 
-Check out the live project here: [Task Manager Live](https://<YOUR_USERNAME>.github.io/<REPO_NAME>/)
+Check out the live project here: [Task Manager Live](https://shittuadams.github.io/task-manager/)
 
 ---
 
