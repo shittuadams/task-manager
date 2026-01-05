@@ -2,7 +2,10 @@ import { useState, useEffect } from "react";
 
 
 function App() {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(() => {
+    const saved = localStorage.getItem("tasks");
+    return saved ? JSON.parse(saved) : [];
+  });
   const [taskText, setTaskText] = useState("")
 
   useEffect(() => {
@@ -24,6 +27,15 @@ function App() {
     ]);
     setTaskText("")
   }
+
+  function toggleTask(id) {
+    setTasks(tasks.map(task =>
+      task.id === id
+        ? { ...task, completed: !task.completed }
+        : task
+    ));
+  }
+
   return (
     <div className="App">
       <h1>Task Manager</h1>
@@ -43,7 +55,16 @@ function App() {
         ) : (
             <ul>
               {tasks.map(task => (
-                <li key={task.id}>{task.text}</li>
+                <li key={task.id} className="task-item">
+                  <input
+                    type="checkbox"
+                    checked={task.completed}
+                    onChange={() => toggleTask(task.id)}
+                  />
+                  <span className={task.completed ? "completed" : ""}>
+                    {task.text}
+                  </span>
+                </li>
               ))}
             </ul>
         )}

@@ -29,3 +29,22 @@ button {
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
+
+.task-item {
+  display: flex;
+  gap: 10px;
+  padding: 8px 0;
+  list-style: none;
+}
+
+.task-item input[type="checkbox"] {
+  cursor: pointer;
+  width: 18px;           /* Optional: Makes it slightly larger */
+  height: 18px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
