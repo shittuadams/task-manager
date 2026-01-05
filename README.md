@@ -1,6 +1,6 @@
 # Task Manager App 📝
 
-![Task Manager Screenshot](https://raw.githubusercontent.com/<YOUR_USERNAME>/<REPO_NAME>/main/screenshots/task-manager.png)
+![Task Manager Screenshot](https://raw.githubusercontent.com/shittuadams/task-manager/main/screenshots/task-manager.png)
 
 > A simple and interactive **React Task Manager** app built with hooks, allowing users to add, complete, delete, and filter tasks with persistence using localStorage.
 
