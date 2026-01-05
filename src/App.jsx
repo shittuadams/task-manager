@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 function App() {
   const [tasks, setTasks] = useState([]);
   const [taskText, setTaskText] = useState("")
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   function addTask() {
     if (taskText.trim() === "") {
