@@ -1,16 +1,52 @@
-# React + Vite
+# Task Manager App 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Task Manager Screenshot](https://raw.githubusercontent.com/<YOUR_USERNAME>/<REPO_NAME>/main/screenshots/task-manager.png)
 
-Currently, two official plugins are available:
+> A simple and interactive **React Task Manager** app built with hooks, allowing users to add, complete, delete, and filter tasks with persistence using localStorage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Check out the live project here: [Task Manager Live](https://<YOUR_USERNAME>.github.io/<REPO_NAME>/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💡 Features
+
+- **Add tasks** – Users can add new tasks quickly.
+- **Toggle completed** – Mark tasks as completed or active with a checkbox.
+- **Delete tasks** – Remove individual tasks with a delete button.
+- **Clear completed** – Remove all completed tasks at once.
+- **Filter tasks** – View All, Active, or Completed tasks.
+- **Task counter** – Shows how many active tasks remain.
+- **Persistence** – Tasks and their states are saved in **localStorage**.
+- **Responsive UI** – Works well on desktop and mobile devices.
+- **React Hooks** – Built using `useState` and `useEffect`.
+
+---
+
+## 🛠️ Built With
+
+- [React](https://reactjs.org/)
+- JavaScript (ES6+)
+- HTML5 & CSS3
+- Git & GitHub
+- GitHub Pages for deployment
+
+---
+
+## 📦 Getting Started
+
+### Prerequisites
+
+- Node.js installed ([Download Node.js](https://nodejs.org/))
+- npm (comes with Node.js)
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/<YOUR_USERNAME>/<REPO_NAME>.git
+```
